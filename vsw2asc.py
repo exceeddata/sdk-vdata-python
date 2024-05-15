@@ -9,10 +9,10 @@ from can import Message
 #示例中只有一个VSW文件，如果有多个VSW要合并转换的话，只需要在输入的文件名数组中继续添加
 #只选取了四组信号
 
-inputPaths = ['/Users/garyshi/Downloads/EXD_file_signal0.vsw']
+inputPaths = ['EXD_file_signal0.vsw']
 seekables = []
 signals = ['3_0x268', '3_0x32c', '3_0x338', '3_0x3a2']
-ascFilename='/Users/garyshi/Downloads/pycanasc.asc'
+ascFilename='pycanasc.asc'
 
 for fname in inputPaths:
     inFile = open(fname, "rb")
