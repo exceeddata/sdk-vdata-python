@@ -11,7 +11,8 @@ python-snappy, zstd
 可以直接通过pip3进行安装
 
 `
-pip3 install exceeddata-sdk-vdata 
+pip3 install exceeddata-sdk-vdata
+
 Collecting exceeddata-sdk-vdata
   Using cached exceeddata_sdk_vdata-2.8.2.2-py2.py3-none-any.whl (30 kB)
 Requirement already satisfied: zstd in /opt/homebrew/lib/python3.10/site-packages (from exceeddata-sdk-vdata) (1.5.5.1)
