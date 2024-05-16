@@ -1,4 +1,4 @@
-# sdk-vdata-python
+# exceeddata-sdk-vdata
 This repo contains samples for EXD vData SDK for Python package (exceeddata-sdk-vdata).
 
 # Python Requirement
