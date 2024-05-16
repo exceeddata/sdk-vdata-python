@@ -23,7 +23,7 @@ The following dependencies will be installed by the SDK if not already exists.
 ## License
 The codes in the repository are released with [MIT License](LICENSE).
 
-# Installation
+## Installation
 exceeddata-sdk-vdata package may be installed using pip command.
 
 ```sh
