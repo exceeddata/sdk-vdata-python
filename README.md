@@ -107,3 +107,7 @@ For usage questions, the best place to go to is [Github issues](https://github.c
 
 ## Contributing to EXD
 All contributions, bug reports, bug fixes, documentation improvements, code enhancements, and new ideas are welcome.
+
+<hr>
+
+[Go to Top](#table-of-contents)
