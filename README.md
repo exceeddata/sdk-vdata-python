@@ -70,7 +70,7 @@ reader = factory.open()
 frame = reader.df()
 df = _pd.DataFrame(frame.objects(), columns=frame.cols(True))  # objects() return a n x m array of rows and columns, here we load into a pandas Data Frame
 ...
-reader.close()
+file.close()
 ```
 
 
