@@ -49,6 +49,9 @@ pip3 list |grep exceeddata
 exceeddata-sdk-vdata 2.8.2.2
 ```
 
+## API specification
+Publicly available SDK classes and methods are at [API Specification](api.html).
+
 ## Samples
 ### Convert VSW to ASC Format
 [ASCII Logging Files (.ASC)](https://support.vector.com/kb?id=kb_article_view&sysparm_article=KB0011536)  is an industry-stand Message-based format for reading and writing signal data. See [vsw2asc.py](vsw2asc.py) for a quick example on conversion.
