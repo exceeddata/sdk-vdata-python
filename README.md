@@ -3,16 +3,19 @@ This repository contains samples for EXD vData SDK for Python package (exceeddat
 
 The following sections demonstrates how to install and use the SDK.
 
-* [System Requirement](#system-requirement)
-* [Additional Dependencies](#additional-dependencies)
-* [License](#license)
-* [Installation](#installation)
-* [API Specification](#api-specification)
-* [Sample Usage](#sample-usage)
-* [Complete Examples](#complete-examples)
-  * [Full VSW Decode App](#full-vsw-decode-app)
-  * [Convert VSW to ASC Format](#convert-vsw-to-asc-format)
-  * [Convert VSW to BLF Format](#convert-vsw-to-blf-format)
+## Table of Contents
+- [System Requirement](#system-requirement)
+- [Additional Dependencies](#additional-dependencies)
+- [License](#license)
+- [Installation](#installation)
+- [API Documentation](#api-documentation)
+- [Sample Usage](#sample-usage)
+- [Complete Examples](#complete-examples)
+  - [Full VSW Decode App](#full-vsw-decode-app)
+  - [Convert VSW to ASC Format](#convert-vsw-to-asc-format)
+  - [Convert VSW to BLF Format](#convert-vsw-to-blf-format)
+- [Getting Help](#getting-help)
+- [Contributing to EXD](#contributing-to-exd)
 
 ## System Requirement
 * python3 
@@ -27,7 +30,7 @@ The following dependencies will be installed by the SDK if not already exists.
 The codes in the repository are released with [MIT License](LICENSE).
 
 ## Installation
-exceeddata-sdk-vdata package may be installed using pip command.
+Binary installers for the latest released version are available at the [Python Package Index (PyPI)](https://pypi.org/project/pandas) and may be installed using pip command.
 
 ```sh
 pip3 install exceeddata-sdk-vdata 
@@ -52,8 +55,8 @@ pip3 list |grep exceeddata
 exceeddata-sdk-vdata 2.8.2.2
 ```
 
-## API specification
-Publicly available SDK classes and methods are at [API Specification](https://htmlpreview.github.io/?https://github.com/exceeddata/sdk-vdata-python/blob/main/doc/api.html).
+## API Documentation
+Publicly available SDK classes and methods are at [API Documentation](https://htmlpreview.github.io/?https://github.com/exceeddata/sdk-vdata-python/blob/main/doc/api.html).
 
 **Import**
 To use the SDK import "exceeddata.sdk.vdata" package and the following classes:
@@ -97,3 +100,10 @@ file.close()
 ### Convert VSW to BLF Format
 * [vsw2blf.py](src/vsw2blf.py): a demo app that converts VSW to Vector BLF format to be used in CanOE and other industry tools.
   * [Binary Logging File (.BLF)](https://support.vector.com/kb?id=kb_article_view&sysparm_article=KB0011536)  is an industry-stand Message-based format for reading and writing signal data. 
+
+
+## Getting Help
+For usage questions, the best place to go to is [Github issues](https://github.com/pandas-dev/pandas/issues). For customers of EXCEEDDATA commercial solutions, you can contact [support](mailto:support@smartsct.com) for questions or support.
+
+## Contributing to EXD
+All contributions, bug reports, bug fixes, documentation improvements, code enhancements, and new ideas are welcome.
