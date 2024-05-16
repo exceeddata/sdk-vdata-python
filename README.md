@@ -7,6 +7,7 @@ The following sections demonstrates how to install and use the SDK.
 * [Additional Dependencies](#additional-dependencies)
 * [License](#license)
 * [Installation](#installation)
+* [API Specification](#api-specification)
 * [Samples](#samples)
   * [Convert VSW to ASC Format](#convert-vsw-to-asc-format)
   * [Convert VSW to BLF Format](#convert-vsw-to-blf-format)
@@ -50,7 +51,7 @@ exceeddata-sdk-vdata 2.8.2.2
 ```
 
 ## API specification
-Publicly available SDK classes and methods are at [API Specification](api.html).
+Publicly available SDK classes and methods are at [API Specification](https://htmlpreview.github.io/?https://github.com/exceeddata/sdk-vdata-python/blob/main/api.html).
 
 ## Samples
 ### Convert VSW to ASC Format
