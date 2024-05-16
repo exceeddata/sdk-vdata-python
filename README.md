@@ -30,7 +30,7 @@ The following dependencies will be installed by the SDK if not already exists.
 The codes in the repository are released with [MIT License](LICENSE).
 
 ## Installation
-Binary installers for the latest released version are available at the [Python Package Index (PyPI)](https://pypi.org/project/pandas) and may be installed using pip command.
+Binary installers for the latest released version are available at the [Python Package Index (PyPI)](https://pypi.org/project/exceeddata-sdk-vdata) and may be installed using pip command.
 
 ```sh
 pip3 install exceeddata-sdk-vdata 
