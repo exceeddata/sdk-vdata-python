@@ -1,11 +1,17 @@
-# exceeddata-sdk-vdata
-This repo contains samples for EXD vData SDK for Python package (exceeddata-sdk-vdata).
+## Introduction
+This repository contains samples for EXD vData SDK for Python package (exceeddata-sdk-vdata).  vData is an edge database running on vehicles' domain controllers.  It stores signal data in a high-compression file format with the extension of .vsw.  EXD vData SDK offers vsw decoding capabilities in standard programming languages such as C++, Java, Python, Javascript, and etc.  The following sections demonstrates how to install and use the SDK.
+* [System Requirement](#system-requirement)
+* [Additional Dependencies](#additional-dependencies)
+* [Installation](#installation)
+* [Samples](#samples)
+  * [Convert VSW to ASC Format](#convert-vsw-to-asc-format)
+  * [Convert VSW to BLF Format](#convert-vsw-to-blf-format)
 
-# Python Requirement
+## System Requirement
 * python3 
 * pip3
 
-# Additional Dependencies
+## Additional Dependencies
 The following dependencies will be installed by the SDK if not already exists.
 * python-snappy
 * zstd
@@ -35,3 +41,11 @@ pip3 list |grep exceeddata
 
 exceeddata-sdk-vdata 2.8.2.2
 ```
+
+## Samples
+### Convert VSW to ASC Format
+[ASCII Logging Files (.ASC)](https://support.vector.com/kb?id=kb_article_view&sysparm_article=KB0011536)  is an industry-stand Message-based format for reading and writing signal data. See [vsw2asc.py](vsw2asc.py) for a quick example on conversion.
+
+### Convert VSW to BLF Format
+[Binary Logging File (.BLF)](https://support.vector.com/kb?id=kb_article_view&sysparm_article=KB0011536)  is an industry-stand Message-based format for reading and writing signal data. See [vsw2blf.py](vsw2blf.py) for a quick example on conversion.
+
