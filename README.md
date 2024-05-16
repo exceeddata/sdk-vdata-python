@@ -1,7 +1,11 @@
 ## Introduction
-This repository contains samples for EXD vData SDK for Python package (exceeddata-sdk-vdata).  vData is an edge database running on vehicles' domain controllers.  It stores signal data in a high-compression file format with the extension of .vsw.  EXD vData SDK offers vsw decoding capabilities in standard programming languages such as C++, Java, Python, Javascript, and etc.  The following sections demonstrates how to install and use the SDK.
+This repository contains samples for EXD vData SDK for Python package (exceeddata-sdk-vdata).  vData is an edge database running on vehicles' domain controllers.  It stores signal data in a high-compression file format with the extension of .vsw.  EXD vData SDK offers vsw decoding capabilities in standard programming languages such as C++, Java, Python, Javascript, and etc.  
+
+The following sections demonstrates how to install and use the SDK.
+
 * [System Requirement](#system-requirement)
 * [Additional Dependencies](#additional-dependencies)
+* [License](#license)
 * [Installation](#installation)
 * [Samples](#samples)
   * [Convert VSW to ASC Format](#convert-vsw-to-asc-format)
@@ -15,6 +19,9 @@ This repository contains samples for EXD vData SDK for Python package (exceeddat
 The following dependencies will be installed by the SDK if not already exists.
 * python-snappy
 * zstd
+
+## License
+The codes in the repository are released with [MIT License](LICENSE).
 
 # Installation
 exceeddata-sdk-vdata package may be installed using pip command.
