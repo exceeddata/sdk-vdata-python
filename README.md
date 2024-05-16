@@ -54,6 +54,13 @@ exceeddata-sdk-vdata 2.8.2.2
 ## API specification
 Publicly available SDK classes and methods are at [API Specification](https://htmlpreview.github.io/?https://github.com/exceeddata/sdk-vdata-python/blob/main/api.html).
 
+**Import**
+To use the SDK import "exceeddata.sdk.vdata" package and the following classes:
+* VDataReaderFactory: in most cases VDataReaderFactory is all you ever need
+* VDataByteReader: use VDataByteReader if you have a vsw byte arrays and need to wrap in a data reader to VDataReaderFactory
+* VDataMeta: the metadata information of the vsw file
+* VDataFrame: the data frame of the vsw data contents
+
 ## Sample Usage
 SDK is very easy to use, in most cases 7 lines of code is sufficient.
 
@@ -75,9 +82,17 @@ file.close()
 
 
 ## Full Examples
+### Decode VSW
+* [vswdecode.py](vswdecode.py): a full parameterized app that decodes vsw to pandas dataframe and then exports to CSV format.
+* Supports input and output file path parameters.
+* Supports optional signals selection parameter.
+* Supports optional base64 encoded vsw files.
+* Supports densify, expand mode and queue mode parameters.
+
 ### Convert VSW to ASC Format
-[ASCII Logging Files (.ASC)](https://support.vector.com/kb?id=kb_article_view&sysparm_article=KB0011536)  is an industry-stand Message-based format for reading and writing signal data. See [vsw2asc.py](vsw2asc.py) for a quick example on conversion.
+* [vsw2asc.py](vsw2asc.py): a demo app that converts VSW to Vector ASC format to be used in CanOE and other industry tools.
+* [ASCII Logging Files (.ASC)](https://support.vector.com/kb?id=kb_article_view&sysparm_article=KB0011536)  is an industry-stand Message-based format for reading and writing signal data. See [vsw2asc.py](vsw2asc.py) for a quick example on conversion.
 
 ### Convert VSW to BLF Format
-[Binary Logging File (.BLF)](https://support.vector.com/kb?id=kb_article_view&sysparm_article=KB0011536)  is an industry-stand Message-based format for reading and writing signal data. See [vsw2blf.py](vsw2blf.py) for a quick example on conversion.
-
+* [vsw2blf.py](vsw2blf.py): a demo app that converts VSW to Vector BLF format to be used in CanOE and other industry tools.
+* [Binary Logging File (.BLF)](https://support.vector.com/kb?id=kb_article_view&sysparm_article=KB0011536)  is an industry-stand Message-based format for reading and writing signal data. 
