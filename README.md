@@ -9,7 +9,8 @@ The following sections demonstrates how to install and use the SDK.
 * [Installation](#installation)
 * [API Specification](#api-specification)
 * [Sample Usage](#sample-usage)
-* [Full Examples](#full-examples)
+* [Complete Examples](#complete-examples)
+  * [Full VSW Decode App](#decode-vsw)
   * [Convert VSW to ASC Format](#convert-vsw-to-asc-format)
   * [Convert VSW to BLF Format](#convert-vsw-to-blf-format)
 
@@ -81,8 +82,8 @@ file.close()
 ```
 
 
-## Full Examples
-### Decode VSW
+## Complete Examples
+### Full VSW Decode App
 * [vswdecode.py](vswdecode.py): a full parameterized app that decodes vsw to pandas dataframe and then exports to CSV format.
 * Supports input and output file path parameters.
 * Supports optional signals selection parameter.
