@@ -10,7 +10,7 @@ The following sections demonstrates how to install and use the SDK.
 * [API Specification](#api-specification)
 * [Sample Usage](#sample-usage)
 * [Complete Examples](#complete-examples)
-  * [Full VSW Decode App](#decode-vsw)
+  * [Full VSW Decode App](#full-vsw-decode-app)
   * [Convert VSW to ASC Format](#convert-vsw-to-asc-format)
   * [Convert VSW to BLF Format](#convert-vsw-to-blf-format)
 
@@ -85,15 +85,15 @@ file.close()
 ## Complete Examples
 ### Full VSW Decode App
 * [vswdecode.py](vswdecode.py): a full parameterized app that decodes vsw to pandas dataframe and then exports to CSV format.
-* Supports input and output file path parameters.
-* Supports optional signals selection parameter.
-* Supports optional base64 encoded vsw files.
-* Supports densify, expand mode and queue mode parameters.
+  * Supports input and output file path parameters.
+  * Supports optional signals selection parameter.
+  * Supports optional base64 encoded vsw files.
+  * Supports densify, expand mode and queue mode parameters.
 
 ### Convert VSW to ASC Format
 * [vsw2asc.py](vsw2asc.py): a demo app that converts VSW to Vector ASC format to be used in CanOE and other industry tools.
-* [ASCII Logging Files (.ASC)](https://support.vector.com/kb?id=kb_article_view&sysparm_article=KB0011536)  is an industry-stand Message-based format for reading and writing signal data. See [vsw2asc.py](vsw2asc.py) for a quick example on conversion.
+  * [ASCII Logging Files (.ASC)](https://support.vector.com/kb?id=kb_article_view&sysparm_article=KB0011536)  is an industry-stand Message-based format for reading and writing signal data. See [vsw2asc.py](vsw2asc.py) for a quick example on conversion.
 
 ### Convert VSW to BLF Format
 * [vsw2blf.py](vsw2blf.py): a demo app that converts VSW to Vector BLF format to be used in CanOE and other industry tools.
-* [Binary Logging File (.BLF)](https://support.vector.com/kb?id=kb_article_view&sysparm_article=KB0011536)  is an industry-stand Message-based format for reading and writing signal data. 
+  * [Binary Logging File (.BLF)](https://support.vector.com/kb?id=kb_article_view&sysparm_article=KB0011536)  is an industry-stand Message-based format for reading and writing signal data. 
