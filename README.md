@@ -53,7 +53,7 @@ exceeddata-sdk-vdata 2.8.2.2
 ```
 
 ## API specification
-Publicly available SDK classes and methods are at [API Specification](https://htmlpreview.github.io/?https://github.com/exceeddata/sdk-vdata-python/blob/main/api.html).
+Publicly available SDK classes and methods are at [API Specification](https://htmlpreview.github.io/?https://github.com/exceeddata/sdk-vdata-python/blob/main/doc/api.html).
 
 **Import**
 To use the SDK import "exceeddata.sdk.vdata" package and the following classes:
