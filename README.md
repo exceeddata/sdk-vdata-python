@@ -8,7 +8,8 @@ The following sections demonstrates how to install and use the SDK.
 * [License](#license)
 * [Installation](#installation)
 * [API Specification](#api-specification)
-* [Samples](#samples)
+* [Sample Usage](#sample-usage)
+* [Full Examples](#full-examples)
   * [Convert VSW to ASC Format](#convert-vsw-to-asc-format)
   * [Convert VSW to BLF Format](#convert-vsw-to-blf-format)
 
@@ -53,7 +54,27 @@ exceeddata-sdk-vdata 2.8.2.2
 ## API specification
 Publicly available SDK classes and methods are at [API Specification](https://htmlpreview.github.io/?https://github.com/exceeddata/sdk-vdata-python/blob/main/api.html).
 
-## Samples
+## Sample Usage
+SDK is very easy to use, in most cases 7 lines of code is sufficient.
+
+```py
+from exceeddata.sdk.vdata import VDataReaderFactory
+import pandas as _pd
+
+signals = ""  # provide a comma-separated list to select signals as needed, empty list means all signals are selected.
+file = open(inputPath, "rb") 
+factory = VDataReaderFactory() 
+factory.setDataReaders(file)
+factory.setSignals(signals)
+reader = factory.open() 
+frame = reader.df()
+df = _pd.DataFrame(frame.objects(), columns=frame.cols(True))  # objects() return a n x m array of rows and columns, here we load into a pandas Data Frame
+...
+reader.close()
+```
+
+
+## Full Examples
 ### Convert VSW to ASC Format
 [ASCII Logging Files (.ASC)](https://support.vector.com/kb?id=kb_article_view&sysparm_article=KB0011536)  is an industry-stand Message-based format for reading and writing signal data. See [vsw2asc.py](vsw2asc.py) for a quick example on conversion.
 
