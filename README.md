@@ -101,6 +101,10 @@ file.close()
 - [vsw2blf.py](src/vsw2blf.py): a demo app that converts VSW to Vector BLF format to be used in CanOE and other industry tools.
   - [Binary Logging File (.BLF)](https://support.vector.com/kb?id=kb_article_view&sysparm_article=KB0011536)  is an industry-stand Message-based format for reading and writing signal data. 
 
+## VSW File Examples
+### Different Frequency Data  
+- [data_diff_freqency.vsw](sample_files/vsw/daa_diff_freqency.vsw): sample data file with 10Hz, 20Hz, 100Hz datas. This file can be used in vswdecode.py and other language Examples.
+- [signal_2x2.vsw](sample_files/vsw/signal_2x2.vsw): Sample CAN Data file, 2 channel included with each channel has 2 message. This file can be used in vsw2blf.py and vsw2asc.py
 
 ## Getting Help
 For usage questions, the best place to go to is [Github issues](https://github.com/exceeddata/sdk-vdata-python//issues). For customers of EXCEEDDATA commercial solutions, you can contact [support](mailto:support@smartsct.com) for questions or support.
