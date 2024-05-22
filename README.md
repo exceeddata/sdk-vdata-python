@@ -103,7 +103,7 @@ file.close()
 
 ## VSW File Examples
 ### Different Frequency Data  
-- [data_diff_freqency.vsw](sample_files/vsw/daa_diff_freqency.vsw): sample data file with 10Hz, 20Hz, 100Hz datas. This file can be used in vswdecode.py and other language Examples.
+- [data_diff_freqency.vsw](sample_files/vsw/data_diff_freqency.vsw): sample data file with 10Hz, 20Hz, 100Hz datas. This file can be used in vswdecode.py and other language Examples.
 - [signal_2x2.vsw](sample_files/vsw/signal_2x2.vsw): Sample CAN Data file, 2 channel included with each channel has 2 message. This file can be used in vsw2blf.py and vsw2asc.py
 
 ## Getting Help
