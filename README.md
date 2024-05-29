@@ -1,6 +1,8 @@
 ## Introduction
 This repository contains samples for EXD vData SDK for Python package (exceeddata-sdk-vdata).  vData is an edge database running on vehicles' domain controllers.  It stores signal data in a high-compression file format with the extension of .vsw.  EXD vData SDK offers vsw decoding capabilities in standard programming languages such as C++, [Java](https://github.com/exceeddata/sdk-vdata-java), [Python](https://github.com/exceeddata/sdk-vdata-python), [Javascript](https://github.com/exceeddata/sdk-vdata-javascript), and etc.  
 
+Chinese README is available [here](README_CN.md).
+
 The following sections demonstrates how to install and use the SDK.
 
 ## Table of Contents
@@ -14,6 +16,7 @@ The following sections demonstrates how to install and use the SDK.
   - [Full VSW Decode App](#full-vsw-decode-app)
   - [Convert VSW to ASC Format](#convert-vsw-to-asc-format)
   - [Convert VSW to BLF Format](#convert-vsw-to-blf-format)
+- [Sample Data Files](#sample-data-files)
 - [Getting Help](#getting-help)
 - [Contributing to EXD](#contributing-to-exd)
 
@@ -95,16 +98,15 @@ file.close()
 
 ### Convert VSW to ASC Format
 - [vsw2asc.py](src/vsw2asc.py): a demo app that converts VSW to Vector ASC format to be used in CanOE and other industry tools.
-  - [ASCII Logging Files (.ASC)](https://support.vector.com/kb?id=kb_article_view&sysparm_article=KB0011536)  is an industry-stand Message-based format for reading and writing signal data. See [vsw2asc.py](vsw2asc.py) for a quick example on conversion.
+  - [ASCII Logging Files (.ASC)](https://support.vector.com/kb?id=kb_article_view&sysparm_article=KB0011536)  is an industry-stand Message-based format for reading and writing signal data. See [vsw2asc.py](src/vsw2asc.py) for a quick example on conversion.
 
 ### Convert VSW to BLF Format
 - [vsw2blf.py](src/vsw2blf.py): a demo app that converts VSW to Vector BLF format to be used in CanOE and other industry tools.
   - [Binary Logging File (.BLF)](https://support.vector.com/kb?id=kb_article_view&sysparm_article=KB0011536)  is an industry-stand Message-based format for reading and writing signal data. 
 
-## VSW File Examples
-### Different Frequency Data  
-- [data_diff_freqency.vsw](sample_files/vsw/data_diff_freqency.vsw): sample data file with 10Hz, 20Hz, 100Hz datas. This file can be used in vswdecode.py and other language Examples.
-- [signal_2x2.vsw](sample_files/vsw/signal_2x2.vsw): Sample CAN Data file, 2 channel included with each channel has 2 message. This file can be used in vsw2blf.py and vsw2asc.py
+## Sample Data Files
+- [data_diff_freqency.vsw](data/vsw/data_diff_freqency.vsw): sample vsw data file with 10Hz, 20Hz, 100Hz signals. This file can be used in [vswdecode.py](src/vswdecode.py) and other examples.
+- [signal_2x2.vsw](data/vsw/signal_2x2.vsw): Sample CAN Data file, 2 channel included with each channel has 2 message. This file can be used with [vsw2asc.py](src/vsw2asc.py) and [vsw2blf.py](src/vsw2blf.py).
 
 ## Getting Help
 For usage questions, the best place to go to is [Github issues](https://github.com/exceeddata/sdk-vdata-python//issues). For customers of EXCEEDDATA commercial solutions, you can contact [support](mailto:support@smartsct.com) for questions or support.
